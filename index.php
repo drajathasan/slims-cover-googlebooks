@@ -1015,7 +1015,7 @@ if (isset($_GET['action']) && $_GET['action'] == 'history') {
             <input type="checkbox" name="labels[]" value="' . $label_d['label_name'] . '"' . $checked . ' aria-label="Labels">&nbsp;' . $label_d['label_desc'] . '
           </span>
           <span class="input-group-text s-labels__icon">
-            <img src="../lib/minigalnano/createthumb.php?filename=../../' . IMG . '/labels/' . urlencode($label_d['label_image']) . '&amp;width=24" class="' . $label_d['label_name'] . '" id="' . $label_d['label_name'] . '" alt="' . $label_d['label_name'] . '"/>
+            <img src="../lib/minigalnano/createthumb.php?filename=' . IMG . '/labels/' . urlencode($label_d['label_image']) . '&amp;width=24" class="' . $label_d['label_name'] . '" id="' . $label_d['label_name'] . '" alt="' . $label_d['label_name'] . '"/>
           </span>
         </div>
         <input type="text" value="' . $url . '" placeholder="Enter a website link/URL to make this label clickable" title="Enter a website link/URL to make this label clickable" name="label_urls[' . $label_d['label_name'] . ']" id="label_urls[' . $label_d['label_name'] . ']" class="form-control" aria-label="Url for current label" style="border-left:none;">
